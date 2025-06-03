@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container result-container">
+        <h1>Diabetes Progression Prediction</h1>
+
+        <div class="result-box">
+            <h2>Prediction Result</h2>
+            <div class="prediction-value">{{ prediction }}</div>
+            <p class="prediction-text">This value represents the predicted disease progression indicator.</p>
+        </div>
+
+        <div class="result-info">
+            <p>Note: Higher values indicate worse disease progression.</p>
+            <p>This model uses various medical indicators to predict the quantitative measure of disease progression one year after baseline.</p>
+        </div>
+
+        <a href="/" class="back-btn">Make Another Prediction</a>
+    </div>
+</body>
+</html>

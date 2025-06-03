@@ -1,0 +1,154 @@
+/* Main Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #343a40;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #0066cc;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+}
+
+.description {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #6c757d;
+    font-size: 1.1rem;
+}
+
+/* Form Styles */
+.prediction-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #495057;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus,
+select:focus {
+    border-color: #0066cc;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.2);
+}
+
+.submit-btn {
+    grid-column: span 2;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Result Page Styles */
+.result-container {
+    text-align: center;
+}
+
+.result-box {
+    background-color: #f1f8ff;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 30px 0;
+    border-left: 5px solid #0066cc;
+}
+
+.prediction-value {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #0066cc;
+    margin: 15px 0;
+}
+
+.prediction-text {
+    font-size: 1.1rem;
+    color: #495057;
+}
+
+.result-info {
+    margin: 25px 0;
+    padding: 15px;
+    background-color: #fff3cd;
+    border-radius: 4px;
+    color: #856404;
+}
+
+.back-btn {
+    display: inline-block;
+    background-color: #6c757d;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.back-btn:hover {
+    background-color: #5a6268;
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .prediction-form {
+        grid-template-columns: 1fr;
+    }
+
+    .submit-btn {
+        grid-column: 1;
+    }
+}
